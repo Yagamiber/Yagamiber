@@ -1,22 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>OCT - Library</title>
+  <link rel="stylesheet" href="./style.css">
 
+</head>
+<body>
 
-	</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Dashboard</h1>
 
-	<div class="section">
-		<div class="container">
-			<div class="row full-height justify-content-center">
-				<div class="col-12 text-center align-self-center py-5">
-					<div class="section pb-5 pt-5 pt-sm-2 text-center">
-						<h6 class="mb-0 pb-3"><span>Log In </span><span>Sign Up</span></h6>
-			          	<input class="checkbox" type="checkbox" id="reg-log" name="reg-log"/>
-			          	<label for="reg-log"></label>
-						<div class="card-3d-wrap mx-auto">
-							<div class="card-3d-wrapper">
-								<div class="card-front">
-									<div class="center-wrap">
-										<div class="section text-center">
-											<h4 class="mb-4 pb-3">Log In</h4>
-											<div class="form-group">
-												<input type="email" name="logemail" class="form-style" placeholder="Your Email" id="logemail" autocomplete="off">
-												<i class="input-icon uil uil-at"></i>
-											</div>	
+        
+        <div id="loginForm">
+        
+            <form id="login">
+                <label for="studentNumber">Student Number:</label>
+                <input type="text" id="studentNumber" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" required>
+                
+                <button type="submit">Login</button>
+                <p id="loginError" class="error-message"></p>
+            </form>
+        </div>
+
+        
+        <div id="logoutForm" class="hidden">
+            <h2>Logout</h2>
+            <form id="logout">
+                <label for="logoutStudentNumber">Student Number:</label>
+                <input type="text" id="logoutStudentNumber" required>
+                
+                <label for="logoutPassword">Password:</label>
+                <input type="password" id="logoutPassword" required>
+                
+                <button type="submit">Logout</button>
+                <p id="logoutError" class="error-message"></p>
+            </form>
+        </div>
+
+        
+        <div class="info-section hidden">
+            <h2>Student Information</h2>
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Section</th>
+                        <th>Student Number</th>
+                        <th>Purpose of Library Visit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+
+        
+        <div class="history-section hidden">
+            <h2>Login History</h2>
+            <table id="historyTable">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Student Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+
+        
+        <div class="logout-history-section hidden">
+            <h2>Logout History</h2>
+            <table id="logoutHistoryTable">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Student Number</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+  <script  src="./script.js"></script>
+
+</body>
+</html>
